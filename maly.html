@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - Maly</title>
+  <meta content="Smart financial assistant web app for managing expenses, goals, and AI-based recommendations." name="description">
+  <meta content="Finance, AI, PHP, MySQL, Dashboard, Portfolio" name="keywords">
+
+  <link href="assets/img/pfp.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/pfp.webp" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Hadeel Alanazi</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/hadeel-alanezi" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:hadeelalanazi.2025@gmail.com" class="email"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <!-- Images Slider (Replace with your screenshots) -->
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": { "delay": 5000 },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <!-- Replace with real images -->
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/maly/1.png" alt="Maly Screenshot">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/maly/2.png" alt="Maly Screenshot">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/maly/3.png" alt="Maly Screenshot">
+                </div>
+
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <!-- Project Information -->
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: FinTech Web Application</li>
+                <li><strong>Project Date</strong>: 2025 (AMD Hackathon)</li>
+                <li><strong>GitHub Repository</strong>:
+                  <a href="https://github.com/hadeel-alanazi/maly" target="_blank">
+                    github.com/hadeel-alanazi/maly
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Description -->
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Summary</h2>
+              <p>
+                Maly is a smart financial assistant web application designed to help users manage their personal finances with ease. The platform allows users to track expenses, monitor income, set financial goals, and receive AI-powered recommendations based on their spending patterns.
+              </p>
+
+              <h3>Features</h3>
+              <ul>
+                <li>User registration and secure authentication</li>
+                <li>Interactive financial dashboard</li>
+                <li>Add and categorize expenses</li>
+                <li>Set and track financial goals</li>
+                <li>AI-powered financial recommendations using OpenAI GPT</li>
+                <li>Responsive and user-friendly interface</li>
+              </ul>
+
+              <h3>Technologies Used</h3>
+              <ul>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Bootstrap 5</li>
+                <li>Chart.js</li>
+                <li>OpenAI API</li>
+              </ul>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span id="year"></span> <strong class="px-1 sitename">Hadeel Alanazi</strong>. All rights reserved.</p>
+      </div>
+      <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
